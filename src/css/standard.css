@@ -1,0 +1,399 @@
+/* ------------------------------    Parameters      ---------------------------------- */
+:root {
+  --marron: rgb(141, 74, 11);
+  --negro: #393939;
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+/* Las adaptamos al modo oscuro 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+    animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+/* ------------------------------    Formating Group      ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  padding-top: 2rem;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,a,strong,blockquote,i,b,u,em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* ------------------------------    Basic      --------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  /*background-color: rgb(224, 220, 211);*/
+  background-color: rgb(255, 248, 235);
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* opcional */
+  line-height: 1.5rem;
+  /* opcional */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  width: auto;
+  height: auto;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px rgb(78, 78, 78),
+               3px 3px rgb(113, 113, 113);
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+h2{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;  
+  padding-left: 0.8rem;
+  border-left: 0.7rem solid var(--marron);
+  text-shadow: 1px 1px var(--marron);
+} 
+h3{  
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;  
+}
+h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+h5{
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  text-decoration: underline;
+  font-style: italic;
+}
+/* h6{} */
+/* p{} */
+/* br{} */
+/* hr{}  */
+
+/* ------------------------------    Formating      ----------------------------------- */
+/* abbr{} */
+/* address{} */
+/* b{} */
+/* bdi{} */
+/* bdo{} */
+/* blockquote{} */
+/* cite{} */
+/* code{} */
+/* del{} */
+/* dfn{} */
+/* em{} */
+i{ font-style: italic;} 
+/* ins{} */
+/* kbd{} */
+/* mark{} */
+/* meter{} */
+/* pre{} */
+/* progress{} */
+/* q{} */
+/* rp{} */
+/* rt{} */
+/* ruby{} */
+/* s{} */
+/* samp{} */
+/* small{} */
+strong{
+  font-weight: bold;  
+}
+/* sub{} */
+sup{
+  vertical-align: super;
+  font-size: 70%; 
+  margin-left: 0.1em; 
+  text-decoration: underline;
+}
+/* template{} */
+/* time{} */
+u{
+text-decoration: underline;
+}
+/* var{} */
+/* wbr{} */
+
+/* ------------------------------    Forms and Imput      ----------------------------- */
+/* form{} */
+/* input{} */
+/* textarea{} */
+/* button{} */
+/* select{} */
+/* optgroup{} */
+/* option{} */
+/* label{} */
+/* fieldset{} */
+/* legend{} */
+/* datalist{} */
+/* output{} */
+
+/* ------------------------------    Frames      -------------------------------------- */
+/* iframe{} */
+
+/* ------------------------------    Images      -------------------------------------- */
+/* img{} */
+/* map{} */
+/* area{} */
+/* canvas{} */
+/* figcaption{} */
+/* figure{} */
+/* picture{} */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+p svg {
+  display: inline;
+  width: initial;
+}
+
+/* ------------------------------    Audio and Video      ----------------------------- */
+/* audio{} */
+/* source{} */
+/* track{} */
+/* video{} */
+
+/* ------------------------------    Links      --------------------------------------- */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+p a {
+  display: inline;
+}
+/* link{} */
+/* nav{} */
+
+/* ------------------------------    List      ---------------------------------------- */
+ul{ margin-left: 1.5rem;}
+ol{ margin-left: 1.5rem;}
+/* ol li{color: red;} */
+ul li { list-style-type: none;}
+ul li::before {  content: '\25B8'; font-size: 1.5rem; padding-right: 0.5rem; }
+ul li li {list-style-type: none;}
+ul li li::before {  content: '\2022'; font-size: 1.5rem; padding-right: 0.5rem; }
+ul li li li {list-style-type: none;}
+ul li li li::before {  content: '	\2192'; font-size: 1.5rem; padding-right: 0.5rem; }
+/* ul li li::before {  content: '\25B8'; font-size: 1.5rem; padding-right: 0.5rem; } */
+/* ul li li li::before { content: '\25BA'; font-size: 1.5rem; padding-right: 0.5rem;} */
+
+/* dl{} */
+/* dt{} */
+/* dd{} */
+
+/* ------------------------------    Table      --------------------------------------- */
+table {
+  width: fit-content;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid black; 
+  
+}
+/* caption{} */
+th{
+  background-color: rgba(57, 57, 57, 0.3);
+  border: 1px dashed black;
+}
+tr {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px dashed black;
+  padding: 0.3rem 1rem;
+  align-content: center;
+}
+/* thead{} */
+/* tbody{} */
+/* tfoot{} */
+/* col{} */
+/* colgroup{} */
+/* 595 x 842 */ 
+/* ------------------------------    Styles and Semantics      ------------------------ */
+/* div{} */
+/* span{} */
+header{
+  padding: 6rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+/* footer{} */
+main{  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* section{} */
+article{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: 1px solid red;
+}
+/* aside{} */
+/* details{} */
+/* dialog{} */
+/* summary{} */
+/* data{} */
+
+/* ------------------------------    Programming      --------------------------------- */
+
+/* script{} */
+/* noscript{} */
+/* embed{} */
+/* object{} */
+/* param{} */
+
+
+/* ------------------------------    classes     --------------------------------- */
+
+#indice{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.codigo{
+  width: fit-content;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #393939;
+  color: aliceblue;
+}
+.h2-topBar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(to bottom,rgb(255, 248, 235) , rgb(255, 248, 235), rgb(255, 248, 235),transparent);
+}
+.fRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* ------------------------------    media     --------------------------------- */
+@media print {
+  @page {
+    size: A4;
+    margin: 0; /* Puedes ajustar los márgenes según tus necesidades */
+  }
+
+  /* Estilo para el contenido que se va a imprimir */
+  body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0; /* Puedes ajustar los márgenes según tus necesidades */
+  }
+}
