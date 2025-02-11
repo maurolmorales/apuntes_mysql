@@ -80,28 +80,28 @@ const Modulo3 = () => {
       <div className="codigo">DELETE FROM empleados;</div>
       <h5>Diferencia entre DELETE y TRUNCATE:</h5>
 
-      <table>
-        <tr>
-          <th>DELETE</th>
-          <th>TRUNCATE</th>
-        </tr>
-        <tr>
-          <td>Puede incluir una cláusula WHERE.</td>
-          <td>No admite cláusula WHERE.</td>
-        </tr>
-        <tr>
-          <td>Registra en el log de transacciones.</td>
-          <td>No se registra en el log de transacciones.</td>
-        </tr>
-        <tr>
-          <td>Afecta registros específicos.</td>
-          <td>Elimina todos los registros de la tabla.</td>
-        </tr>
-        <tr>
-          <td>Compatible con claves foráneas.</td>
-          <td>No se puede usar si hay claves foráneas.</td>
-        </tr>
-      </table>
+      <div className="table">
+        <div className="tr">
+          <div className="th">DELETE</div>
+          <div className="th">TRUNCATE</div>
+        </div>
+        <div className="tr">
+          <div className="td">Puede incluir una cláusula WHERE.</div>
+          <div className="td">No admite cláusula WHERE.</div>
+        </div>
+        <div className="tr">
+          <div className="td">Registra en el log de transacciones.</div>
+          <div className="td">No se registra en el log de transacciones.</div>
+        </div>
+        <div className="tr">
+          <div className="td">Afecta registros específicos.</div>
+          <div className="td">Elimina todos los registros de la tabla.</div>
+        </div>
+        <div className="tr">
+          <div className="td">Compatible con claves foráneas.</div>
+          <div className="td">No se puede usar si hay claves foráneas.</div>
+        </div>
+      </div>
       <h3 id="3.4.0">3.4.0 LOCK (Bloqueo de Tablas) </h3>
       <p>
         El comando LOCK permite bloquear tablas para evitar modificaciones

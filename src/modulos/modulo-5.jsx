@@ -19,36 +19,36 @@ const Modulo5 = () => {
         Una transacción es un conjunto de operaciones SQL que se ejecutan como
         una unidad lógica. Las transacciones siguen las propiedades ACID:
       </p>
-      <table>
-        <tr>
-          <th> Propiedad </th>
-          <th> Descripción</th>
-        </tr>
-        <tr>
-          <td> Atomicidad</td>
-          <td> Todas las operaciones se completan o ninguna se aplica. </td>
-        </tr>
-        <tr>
-          <td> Consistencia </td>
-          <td>
+      <div className="table" >
+        <div className="tr" >
+          <div className="th" > Propiedad </ div>
+          <div className="th" > Descripción</ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > Atomicidad</ div>
+          <div className="td" > Todas las operaciones se completan o ninguna se aplica. </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > Consistencia </ div>
+          <div className="td" >
             La base de datos pasa de un estado válido a otro tras una
             transacción.
-          </td>
-        </tr>
-        <tr>
-          <td>Aislamiento </td>
-          <td>
+          </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" >Aislamiento </ div>
+          <div className="td" >
             Las transacciones concurrentes no afectan el resultado entre sí.
-          </td>
-        </tr>
-        <tr>
-          <td> Durabilidad </td>
-          <td>
+          </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > Durabilidad </ div>
+          <div className="td" >
             Una vez que una transacción se confirma (COMMIT), los cambios son
             permanentes.
-          </td>
-        </tr>
-      </table>
+          </ div>
+        </ div>
+      </ div>
       <h4>Ejemplo de transacción:</h4>
       <p>
         Supongamos que estás transfiriendo dinero entre cuentas: <br />
@@ -114,33 +114,33 @@ const Modulo5 = () => {
         afectan el rendimiento y la consistencia. Configura el nivel adecuado
         según las necesidades de tu aplicación. Niveles de aislamiento:
       </p>
-      <table>
-        <tr>
-          <th> Nivel </th>
-          <th> Descripción </th>
-        </tr>
-        <tr>
-          <td> READ UNCOMMITTED </td>
-          <td> Permite leer datos no confirmados por otras transacciones.</td>
-        </tr>
-        <tr>
-          <td> READ COMMITTED </td>
-          <td> Permite leer solo datos confirmados. </td>
-        </tr>
-        <tr>
-          <td> REPEATABLE READ </td>
-          <td>
+      <div className="table" >
+        <div className="tr" >
+          <div className="th" > Nivel </ div>
+          <div className="th" > Descripción </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > READ UNCOMMITTED </ div>
+          <div className="td" > Permite leer datos no confirmados por otras transacciones.</ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > READ COMMITTED </ div>
+          <div className="td" > Permite leer solo datos confirmados. </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > REPEATABLE READ </ div>
+          <div className="td" >
             Garantiza que los datos leídos no cambien durante la transacción.
-          </td>
-        </tr>
-        <tr>
-          <td> SERIALIZABLE </td>
-          <td>
+          </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > SERIALIZABLE </ div>
+          <div className="td" >
             Aislamiento completo; las transacciones se ejecutan como si fueran
             secuenciales.
-          </td>
-        </tr>
-      </table>
+          </ div>
+        </ div>
+      </ div>
       <div className="codigo">
         SET TRANSACTION ISOLATION LEVEL REPEATABLE READ; <br />
         START TRANSACTION; <br />

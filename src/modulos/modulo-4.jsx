@@ -50,43 +50,43 @@ const Modulo4 = () => {
       </div>
 
       <h5>Operadores comunes en WHERE:</h5>
-      <table>
-        <tr>
-          <th>Operador</th>
-          <th>Descripción</th>
-          <th>Ejemplo</th>
-        </tr>
-        <tr>
-          <td>= </td>
-          <td>Igual</td>
-          <td>WHERE puesto = 'Gerente'</td>
-        </tr>
-        <tr>
-          <td>{">"} </td>
-          <td>Mayor que </td>
-          <td>WHERE salario {">"} 5000</td>
-        </tr>
-        <tr>
-          <td>{"<"} </td>
-          <td>Menor que </td>
-          <td>WHERE salario {"<"} 4000</td>
-        </tr>
-        <tr>
-          <td>BETWEEN </td>
-          <td>Entre dos valores inclusivos</td>
-          <td>WHERE salario BETWEEN 2000 AND 5000</td>
-        </tr>
-        <tr>
-          <td>LIKE </td>
-          <td>Comparación con patrones </td>
-          <td>WHERE nombre LIKE 'Ana%'</td>
-        </tr>
-        <tr>
-          <td>IN </td>
-          <td>Valores dentro de una lista</td>
-          <td>WHERE puesto IN ('Gerente', 'Analista')</td>
-        </tr>
-      </table>
+      <div className="table" >
+        <div className="tr" >
+          <div className="th" >Operador</ div>
+          <div className="th" >Descripción</ div>
+          <div className="th" >Ejemplo</ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" >= </ div>
+          <div className="td" >Igual</ div>
+          <div className="td" >WHERE puesto = 'Gerente'</ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" >{">"} </ div>
+          <div className="td" >Mayor que </ div>
+          <div className="td" >WHERE salario {">"} 5000</ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" >{"<"} </ div>
+          <div className="td" >Menor que </ div>
+          <div className="td" >WHERE salario {"<"} 4000</ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" >BETWEEN </ div>
+          <div className="td" >Entre dos valores inclusivos</ div>
+          <div className="td" >WHERE salario BETWEEN 2000 AND 5000</ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" >LIKE </ div>
+          <div className="td" >Comparación con patrones </ div>
+          <div className="td" >WHERE nombre LIKE 'Ana%'</ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" >IN </ div>
+          <div className="td" >Valores dentro de una lista</ div>
+          <div className="td" >WHERE puesto IN ('Gerente', 'Analista')</ div>
+        </ div>
+      </ div>
       <br />
       <h4>Ordenamiento con ORDER BY</h4>
       <p>
@@ -109,38 +109,38 @@ const Modulo4 = () => {
         más columnas. Funciones de agregación comunes:
       </p>
 
-      <table>
-        <tr>
-          <th> Función </th>
-          <th> Descripción </th>
-          <th> Ejemplo </th>
-        </tr>
-        <tr>
-          <td> COUNT() </td>
-          <td> Cuenta registros </td>
-          <td> SELECT COUNT(*) </td>
-        </tr>
-        <tr>
-          <td> SUM() </td>
-          <td> Suma valores de una columna </td>
-          <td> SELECT SUM(salario) </td>
-        </tr>
-        <tr>
-          <td> AVG() </td>
-          <td> Promedio de valores </td>
-          <td> SELECT AVG(salario) </td>
-        </tr>
-        <tr>
-          <td> MAX() </td>
-          <td> Valor máximo </td>
-          <td> SELECT MAX(salario) </td>
-        </tr>
-        <tr>
-          <td> MIN() </td>
-          <td> Valor mínimo </td>
-          <td> SELECT MIN(salario) </td>
-        </tr>
-      </table>
+      <div className="table" >
+        <div className="tr" >
+          <div className="th" > Función </ div>
+          <div className="th" > Descripción </ div>
+          <div className="th" > Ejemplo </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > COUNT() </ div>
+          <div className="td" > Cuenta registros </ div>
+          <div className="td" > SELECT COUNT(*) </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > SUM() </ div>
+          <div className="td" > Suma valores de una columna </ div>
+          <div className="td" > SELECT SUM(salario) </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > AVG() </ div>
+          <div className="td" > Promedio de valores </ div>
+          <div className="td" > SELECT AVG(salario) </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > MAX() </ div>
+          <div className="td" > Valor máximo </ div>
+          <div className="td" > SELECT MAX(salario) </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > MIN() </ div>
+          <div className="td" > Valor mínimo </ div>
+          <div className="td" > SELECT MIN(salario) </ div>
+        </ div>
+      </ div>
       <div className="codigo">
         SELECT puesto, COUNT(*) AS cantidad_empleados <br />
         FROM empleados <br />

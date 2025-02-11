@@ -355,47 +355,47 @@ const Modulo2 = () => {
           </div>
         </li>
       </ul>
-      <table>
-        <tr>
-          <th> Acción Efecto </th>
-          <th>Descripción</th>
-          <th> Común</th>
-        </tr>
-        <tr>
-          <td> CASCADE </td>
-          <td>
+      <div className="table" >
+        <div className="tr" >
+          <div className="th" > Acción Efecto </ div>
+          <div className="th" >Descripción</ div>
+          <div className="th" > Común</ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > CASCADE </ div>
+          <div className="td" >
             Propaga eliminaciones/actualizaciones a las filas relacionadas.
-          </td>
-          <td> Borra o actualiza automáticamente los datos relacionados. </td>
-        </tr>
-        <tr>
-          <td> RESTRICT </td>
-          <td>
+          </ div>
+          <div className="td" > Borra o actualiza automáticamente los datos relacionados. </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > RESTRICT </ div>
+          <div className="td" >
             Bloquea la eliminación/actualización si hay datos relacionados.
-          </td>
-          <td>
+          </ div>
+          <div className="td" >
             Impide cambios en los datos principales mientras haya dependencias.
-          </td>
-        </tr>
-        <tr>
-          <td> SET NULL</td>
-          <td> Establece la columna de la clave foránea en NULL. </td>
-          <td> Rompe la relación sin eliminar los datos relacionados. </td>
-        </tr>
-        <tr>
-          <td> SET DEFAULT </td>
-          <td> Asigna un valor predeterminado a la clave foránea. </td>
-          <td> Rompe la relación asignando un valor predefinido. </td>
-        </tr>
-        <tr>
-          <td> NO ACTION </td>
-          <td>
+          </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > SET NULL</ div>
+          <div className="td" > Establece la columna de la clave foránea en NULL. </ div>
+          <div className="td" > Rompe la relación sin eliminar los datos relacionados. </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > SET DEFAULT </ div>
+          <div className="td" > Asigna un valor predeterminado a la clave foránea. </ div>
+          <div className="td" > Rompe la relación asignando un valor predefinido. </ div>
+        </ div>
+        <div className="tr" >
+          <div className="td" > NO ACTION </ div>
+          <div className="td" >
             Similar a RESTRICT, pero verifica la integridad referencial después
             de ejecutar las operaciones.
-          </td>
-          <td> Operación rechazada si viola la integridad referencial. </td>
-        </tr>
-      </table>
+          </ div>
+          <div className="td" > Operación rechazada si viola la integridad referencial. </ div>
+        </ div>
+      </ div>
       <p>
         Usa CASCADE con precaución: puede eliminar grandes cantidades de datos
         relacionados de manera no intencional. Prefiere RESTRICT o NO ACTION si
